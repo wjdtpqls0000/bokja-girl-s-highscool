@@ -1,0 +1,73 @@
+button{
+    width: 80px;
+    height: 30px;
+    border: none;
+    background-color: whitesmoke;
+    color: black;
+    box-shadow: 0 4px 16 gray;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-150%, 90%);
+}
+button:focus{
+    outline: 0;
+}
+button:hover{
+    background-color: rgb(240, 240, 240);
+    cursor: pointer;
+    box-shadow: 0 2px 4px gray;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 10px;
+    height: 280px;
+    width: 320px;
+}
+.center h1{
+    text-align: center;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid silver;
+    transform: translate(0%, 5%);
+}
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+    height: 30px;
+    transform: translate(0%, 20%);
+}
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.txt_field label{
+    position: fixed;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+    top: -5px;
+    color: #2980b9
+}
